@@ -1,0 +1,42 @@
+.containers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.favorite-product-container {
+    min-width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.favorite-product-card1,
+.favorite-product-card2,
+.favorite-product-card3 {
+    margin: 0 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-favorite-product1 {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transition: 0.3s;
+}
+
+.img-favorite-product2 {
+    position: absolute;
+    top: -5px;
+    left: 5px;
+}
+
+.img-favorite-product3 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+
