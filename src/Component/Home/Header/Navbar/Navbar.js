@@ -35,7 +35,7 @@ const Navbar = () => {
                         </svg>
                     </div>
                     <div className='input-search'>
-                        <input type="text" placeholder="Search........"></input>
+                        <input type="text" placeholder="Tìm kiếm..."></input>
                     </div>
 
                 </div>

@@ -177,6 +177,21 @@
     margin-top: 45px;
 }
 
+.input-info input::placeholder,
+.input-info button {
+    font-family: "Montserrat", sans-serif;
+}
+
+.input-info button {
+    color: #fff;
+    font-weight: 600;
+}
+
+.input-info button:hover {
+    cursor: pointer;
+    color: #ff0000;
+}
+
 .input-button {
     margin: 0 0 1rem 0;
     width: 240px;

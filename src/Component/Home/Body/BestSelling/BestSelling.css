@@ -45,11 +45,11 @@
 
 .img-product img {
     margin-top: 20px;
+    transition: 0.4s;
 }
 
 .img-product:hover img {
-    transition: 0.5s;
-    transform: scale(1.4) translateY(30px);
+    transform: scale(1.2);
 }
 
 .selling-card p {
