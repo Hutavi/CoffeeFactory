@@ -126,7 +126,20 @@
     text-align: left;
 }
 
-.detail-link p,
+.detail-link a {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    margin-top: 1.8rem;
+    color: #ffffff;
+    text-align: left;
+    text-decoration: none;
+}
+
 .detail-rules p,
 .description-sub p {
     font-family: "Montserrat", sans-serif;
@@ -232,7 +245,7 @@
     margin: auto 0;
 }
 
-.detail-link p:hover {
+.detail-link a:hover {
     color: #f71515ca;
     cursor: pointer;
 }

@@ -161,11 +161,12 @@ const Footer = () => {
         <div className="quick-link">
           <h2 className="title-link">LIÊN KẾT NHANH</h2>
           <div className="detail-link">
-            <p>Trang Chủ</p>
-            <p>Sản Phẩm</p>
-            <p>Thông Tin Ưu Đãi</p>
-            <p>Liên Hệ</p>
-            <p>Cửa Hàng</p>
+            <a href="/">Trang Chủ</a>
+            {/* <p>Trang Chủ</p> */}
+            <a href="/">Sản Phẩm</a>
+            <a href="/">Thông Tin Ưu Đãi</a>
+            <a href="">Liên Hệ</a>
+            <a href="/">Cửa Hàng</a>
           </div>
         </div>
         <div className="provision">
