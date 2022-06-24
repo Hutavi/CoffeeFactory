@@ -3,7 +3,7 @@ import './Login_Register.css'
 import Login from './Login/Login'
 import Register from './Register/Register'
 import ForgetPassword from './ForgetPassword/ForgetPassword'
-function LOGIN_REGISTER(props) {
+function Login_Register(props) {
   const [option, setOption] = useState(1)
 
   const getOption = (data, data2) => {
@@ -21,4 +21,4 @@ function LOGIN_REGISTER(props) {
   )
 }
 
-export default LOGIN_REGISTER
+export default Login_Register
