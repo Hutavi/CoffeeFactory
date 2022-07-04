@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const Login = () => {
+const ForgetPassword = () => {
     return (
         <div>
             
@@ -11,9 +11,9 @@ const Login = () => {
 };
 
 
-Login.propTypes = {
+ForgetPassword.propTypes = {
 
 };
 
 
-export default Login;
+export default ForgetPassword;

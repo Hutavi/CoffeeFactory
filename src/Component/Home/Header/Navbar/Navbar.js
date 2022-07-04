@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import Navbars from './Navbar.css';
 
@@ -10,11 +11,18 @@ const Navbar = () => {
                     <img src="../../img/Logo.png" alt="logo"></img>
                 </div>
                 <div className='detail-describe'>
-                    <p>TRANG CHỦ</p>
+                    <Link className='describe' to= "/home">TRANG CHỦ</Link>
+                    <Link className='describe' to= "/">SẢN PHẨM</Link>
+                    <Link className='describe' to= "/">THÔNG TIN ƯU ĐÃI</Link>
+                    <Link className='describe' to= "/store">CỬA HÀNG</Link>
+                    <Link className='describe' to= "/">LIÊN HỆ</Link>
+
+
+                    {/* <p>TRANG CHỦ</p>
                     <p>SẢN PHẨM</p>
                     <p>THÔNG TIN ƯU ĐÃI</p>
                     <p>CỬA HÀNG</p>
-                    <p>LIÊN HỆ</p>
+                    <p>LIÊN HỆ</p> */}
                 </div>
             </div>
 

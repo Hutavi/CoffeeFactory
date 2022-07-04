@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import './Register.css'
-import logo from '../../../img/logoTCF.jpg'
+// import logo from '../../../../public/img/logoTCF.png'
 import axios from 'axios'
 
 
-function Register(props) {
+function Register({callBacks}) {
   const [accountWrong, setAccountWrong] = useState(false)
   const [accountExist, setAccountExist] = useState(false)
   const [passwordWrong, setPasswordWrong] = useState(false)
@@ -54,12 +54,14 @@ function Register(props) {
   }
 
   const handleReturn = () => {
-    props.callBack(1, 0)
+    callBacks(1, 0)
   }
 
   const setClick = (data) => {
-    props.callBack(data, 0)
+    callBacks(data, 0)
   }
+
+  console.log(typeof(callBacks))
 
   const [step, setStep] = useState(1)
 
@@ -67,7 +69,7 @@ function Register(props) {
     <div className='Register'>
       {step === 1 && <form onSubmit={handleRegister} className='step1'>
         <div className='logo'>
-          <img src={logo} alt='' />
+          <img src="../../../../public/img/logoTCF.png" alt='' />
         </div>
         <div className={`input ${(accountWrong && 'inputWrongRegister') || (accountExist && 'inputWrongRegister')}`}>
           <input placeholder='Nhập gmail của bạn' spellCheck='false' onChange={accountChangeHandler} />
@@ -123,7 +125,7 @@ function Register(props) {
           <p>Bạn đã có tài khoản? </p>
           <p style={{ color: 'red', fontWeight: '700' }} onClick={() => setClick(1)}>Đăng nhập</p>
         </div>
-        <div className='iconBack' onClick={() => setClick(1)}>
+        <div className='iconBack' onClick={() => {setClick(0)}}>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_915_610)">
               <path d="M9.11602 1.03746e-06L10.8848 1.83588L3.01914 10L10.8848 18.1641L9.11601 20L0.366014 10.9179C-0.121486 10.4119 -0.121486 9.59131 0.366014 9.08206L9.11602 1.03746e-06Z" fill="black" />
@@ -143,7 +145,7 @@ function Register(props) {
       </form>}
       {step === 2 && <div className='step2'>
         <div className='logo'>
-          <img src={logo} alt='' />
+          <img src= "../../../../public/img/logoTCF.png" alt='' />
         </div>
         <div className='logined'>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

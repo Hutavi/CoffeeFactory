@@ -2,18 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const Login = () => {
+const Store = () => {
     return (
         <div>
-            
+            <p>Khương idol</p>
         </div>
     );
 };
 
 
-Login.propTypes = {
+Store.propTypes = {
 
 };
 
 
-export default Login;
+export default Store;
