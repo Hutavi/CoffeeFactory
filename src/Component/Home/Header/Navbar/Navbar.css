@@ -46,6 +46,10 @@
     text-decoration: none;
 }
 
+.detail-describe .describe.title-color {
+    color: rgba(172, 1, 1, 1) !important;
+}
+
 .detail-describe .describe:hover {
     color: rgba(172, 1, 1, 1);
     cursor: pointer;
