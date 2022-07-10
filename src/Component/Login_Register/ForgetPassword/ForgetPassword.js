@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './ForgetPassword.css'
-import logo from '../../../Image/logo.jpg'
+// import logo from '../../../../public/img/Logo.png'
 import axios from 'axios'
 
 function ForgetPassword(props) {
@@ -100,7 +100,7 @@ function ForgetPassword(props) {
     <div className='ForgetPassword'>
       {step === 1 && <form onSubmit={handleEmailConfirm} className='step1'>
         <div className='logo'>
-          <img src={logo} alt='' />
+          <img src="../../../../public/img/Logo.png" alt='' />
         </div>
         <div className={`input ${confirmGmail && 'inputWrong'}`}>
           <input onChange={emailChangeHandler} placeholder='Nhập gmail của bạn' spellCheck='false' />
@@ -141,7 +141,7 @@ function ForgetPassword(props) {
 
       {step === 2 && <form onSubmit={handlePinConfirm} className='step2'>
         <div className='logo'>
-          <img src={logo} alt='' />
+          <img src="../../../../public/img/Logo.png" alt='' />
         </div>
         <div className='message'>Thư xác nhận lại mật khẩu đã được chuyển đến gmail của bạn.</div>
         <div className='pinConfirm'>
@@ -170,7 +170,7 @@ function ForgetPassword(props) {
       </form>}
       {step === 3 && <form onSubmit={handlePasswordConfirm} className='step3'>
         <div className='logo'>
-          <img src={logo} alt='' />
+          <img src="../../../../public/img/Logo.png" alt='' />
         </div>
         <div className={`input ${passwordWrong && 'inputWrong'}`}>
           <input onChange={passwordChangeHandler} type="password" placeholder='Mật khẩu mới' spellCheck='false' />
@@ -223,7 +223,7 @@ function ForgetPassword(props) {
       </form>}
       {step === 4 && <div className='step4'>
         <div className='logo'>
-          <img src={logo} alt='' />
+          <img src="../../../../public/img/Logo.png" alt='' />
         </div>
         <div className='logined'>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

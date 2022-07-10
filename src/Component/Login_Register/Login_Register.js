@@ -3,9 +3,9 @@ import './Login_Register.css'
 import Login from './Login/Login'
 import Register from './Register/Register'
 import ForgetPassword from './ForgetPassword/ForgetPassword'
-import Navbar from '../Home/Header/Navbar/Navbar'
 import { useNavigate } from "react-router-dom";
 import Home from '../Home/Home'
+import Navbar from '../Navbar/Navbar'
 
 function Login_Register({callBacks}) {
   const [option, setOption] = useState(2)

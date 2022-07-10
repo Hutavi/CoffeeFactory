@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Login.css'
-import logo from '../../../Image/logo.jpg'
+// import logo from '../../../Image/logo.jpg'
 import axios from 'axios'
 import Cookie from 'universal-cookie'
 
@@ -57,7 +57,7 @@ function Login(props) {
     return (
         <form onSubmit={handleLogin} className='Login'>
             <div className='logo'>
-                <img src={logo} alt='' />
+                <img src="../../../../public/img/Logo.png" alt='' />
             </div>
             {logined === 0 && <div className={`input ${accountWrong && 'inputWrong'}`} onChange={accountChangeHandler}>
                 <input placeholder='Nhập gmail của bạn' spellCheck='false' />
