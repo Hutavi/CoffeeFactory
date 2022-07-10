@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Navbar from '../Home/Header/Navbar/Navbar';
 import "./IntroducePage.css"
-import Footer from '../Home/Footer/Footer';
+import Footer from '../Footer/Footer';
 
 const IntroducePage = () => {
     return (
@@ -86,7 +86,9 @@ const IntroducePage = () => {
                     </p>
                 </div>
             </div>
-            <Footer/>
+            <div>
+                <Footer />
+            </div>
         </div>
     );
 };
