@@ -102,7 +102,7 @@
     color: red;
     font-weight: 700;
     position: absolute;
-    top: 60%;
+    top: 52%;
     left: 61%;
     cursor: pointer;
     user-select: none;
@@ -119,8 +119,8 @@
 
 .wrongInputLogin {
     position: absolute;
-    top: 41%;
-    left: 23%;
+    top: 49%;
+    left: 21%;
     color: red;
     font-style: italic;
     font-size: 12px;
