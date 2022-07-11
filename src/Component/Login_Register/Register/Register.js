@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './Register.css'
-// import logo from '../../../../public/img/logoTCF.png'
 import axios from 'axios'
 import Navbar from '../../Navbar/Navbar'
 import { Route, Routes, useNavigate } from "react-router-dom";
@@ -46,29 +45,20 @@ function Register(props) {
       setStep(2)
     }).catch(error => {
       console.log(error)
-      // let a = error.response.data.message.split('. ')
-      // for (let i in a) {
-      //   if (a[i].includes('Duplicate field value')) setAccountExist(true)
-      //   if (a[i] === 'Please provide a valid email') setAccountWrong(true)
-      //   if (a[i] === 'Password length must be greater or equal to 8' || a[i] === 'Please provide a password') setPasswordWrong(true)
-      //   if (a[i] === 'PLease confirm your password' || a[i] === 'Passwords are not the same') setConfirmPasswordWrong(true)
+      let a = error.response.data.message.split('. ')
+      for (let i in a) {
+        if (a[i].includes('Duplicate field value')) setAccountExist(true)
+        if (a[i] === 'Please provide a valid email') setAccountWrong(true)
+        if (a[i] === 'Password length must be greater or equal to 8' || a[i] === 'Please provide a password') setPasswordWrong(true)
+        if (a[i] === 'PLease confirm your password' || a[i] === 'Passwords are not the same') setConfirmPasswordWrong(true)
 
-      // }
+      }
     })
   }
 
-  const handleReturn = () => {
-    // callBacks(1, 0)
-  }
-
-  // const setClick = (data) => {
-
-  //   props.callBacks(data)
-  // }
   const [loginBtn, setLoginBtn] = useState(false)
   const [backBtn, setBackBtn] = useState(false)
 
-  // console.log(typeof (props.callBacks))
   const navigate = useNavigate()
 
   const [step, setStep] = useState(1)
@@ -166,7 +156,7 @@ function Register(props) {
             <h1>Đăng kí thành công.</h1>
           </div>
           <div className='returnPage'>
-            <p onClick={handleReturn}>Đăng nhập</p>
+            <p onClick={() => {navigate('/login')}}>Đăng nhập</p>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>

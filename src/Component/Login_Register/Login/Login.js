@@ -46,19 +46,6 @@ function Login() {
 
     const [logined, setLogined] = useState(false)
 
-    // const setClick = (data) => {
-    //     if (data === 4) {
-    //         callBacks(-1, 1)
-    //     }
-    //     else callBacks(data, 0)
-    // }
-
-    // useEffect(() => {
-    //     if (cookie.get('JWT')) {
-    //         setLogined(0)
-    //         // callBacks(-1, 1)
-    //     }
-    // }, [])
     return (
         <div className='LOGIN_REGISTER'>
             <Navbar />
@@ -107,7 +94,7 @@ function Login() {
                     <p>Bạn chưa có tài khoản? </p>
                     <p style={{ color: 'red', fontWeight: '700' }} onClick={() => { navigate('/register') }}>Tạo tài khoản</p>
                 </div>}
-                {<div className='forgetPassword' onClick={() => { navigate('/forgetpassword') }}>Quên mật khẩu?</div>}
+                {<div className='forgetPassword' onClick={() => { navigate('/forgotpassword') }}>Quên mật khẩu?</div>}
                 {<div className='icon' onClick={() => { navigate('/') }}>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_915_610)">

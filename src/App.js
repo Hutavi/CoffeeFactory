@@ -12,6 +12,7 @@ import Login_Register from './Component/Login_Register/Login_Register';
 import IntroducePage from './Component/IntroducePage/IntroducePage';
 import Register from './Component/Login_Register/Register/Register';
 import Login from './Component/Login_Register/Login/Login';
+import ForgetPassword from './Component/Login_Register/ForgetPassword/ForgetPassword';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/home/introducePage" element={<IntroducePage />} />
           <Route path="/login" element={<Login />}/>
           <Route path="/register" element={<Register/>}/>
+          <Route path="/forgotpassword" element={<ForgetPassword/>}/>
           <Route path="/store" element={<Store/>}/>
         </Routes>
     </div>
